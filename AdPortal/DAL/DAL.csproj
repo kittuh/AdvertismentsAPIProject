@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200623070133_InitialCommit.cs" />
+    <Compile Remove="Migrations\20200623070133_InitialCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200623070205_InitialCommit.cs" />
+    <Compile Remove="Migrations\20200623070205_InitialCommit.Designer.cs" />
+    <Compile Remove="Migrations\20200623122404_AddFeaturesToDb.cs" />
+    <Compile Remove="Migrations\20200623122404_AddFeaturesToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200625070426_AddedGuidDroppedId.cs" />
+    <Compile Remove="Migrations\20200625070426_AddedGuidDroppedId.Designer.cs" />
+    <Compile Remove="Migrations\20200727065746_somethingnew.cs" />
+    <Compile Remove="Migrations\20200727065746_somethingnew.Designer.cs" />
+    <Compile Remove="Migrations\20200803121405_AddingCardIDtoImage.cs" />
+    <Compile Remove="Migrations\20200803121405_AddingCardIDtoImage.Designer.cs" />
+    <Compile Remove="Migrations\20200805090338_AddingImagesToOtherModels.cs" />
+    <Compile Remove="Migrations\20200805090338_AddingImagesToOtherModels.Designer.cs" />
+    <Compile Remove="Migrations\20200805091812_AddingImagesToOtherModels.cs" />
+    <Compile Remove="Migrations\20200805091812_AddingImagesToOtherModels.Designer.cs" />
+    <Compile Remove="Migrations\20200805092338_AddingImagesToOtherModels1.cs" />
+    <Compile Remove="Migrations\20200805092338_AddingImagesToOtherModels1.Designer.cs" />
+    <Compile Remove="Migrations\20200805092503_AddingImagesToOtherModels1.cs" />
+    <Compile Remove="Migrations\20200805092503_AddingImagesToOtherModels1.Designer.cs" />
+    <Compile Remove="Migrations\20200805092754_AddingImagesToOtherModels1.cs" />
+    <Compile Remove="Migrations\20200805092754_AddingImagesToOtherModels1.Designer.cs" />
+    <Compile Remove="Migrations\20200805093758_AddingImagesToOtherModels2.cs" />
+    <Compile Remove="Migrations\20200805093758_AddingImagesToOtherModels2.Designer.cs" />
+    <Compile Remove="Migrations\20200805095653_AdingImagesToOtherModels.cs" />
+    <Compile Remove="Migrations\20200805095653_AdingImagesToOtherModels.Designer.cs" />
+    <Compile Remove="Migrations\20200806113131_AddImageTableToDb.cs" />
+    <Compile Remove="Migrations\20200806113131_AddImageTableToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200806122321_hi.cs" />
+    <Compile Remove="Migrations\20200806122321_hi.Designer.cs" />
+    <Compile Remove="Migrations\20200806124422_s.cs" />
+    <Compile Remove="Migrations\20200806124422_s.Designer.cs" />
+    <Compile Remove="Migrations\20200806125139_AddImageTableToDb.cs" />
+    <Compile Remove="Migrations\20200806125139_AddImageTableToDb.Designer.cs" />
+    <Compile Remove="Migrations\20200810075824_SingleFieldsInsteadOfComplex.cs" />
+    <Compile Remove="Migrations\20200810075824_SingleFieldsInsteadOfComplex.Designer.cs" />
+    <Compile Remove="Migrations\20200810093306_TEMP.cs" />
+    <Compile Remove="Migrations\20200810093306_TEMP.Designer.cs" />
+    <Compile Remove="Migrations\20200814071405_hello.cs" />
+    <Compile Remove="Migrations\20200814071405_hello.Designer.cs" />
+    <Compile Remove="Migrations\20200814071442_CascadeToCarsAndBikesTables.cs" />
+    <Compile Remove="Migrations\20200814071442_CascadeToCarsAndBikesTables.Designer.cs" />
+    <Compile Remove="Migrations\20200814071610_CascadeToCarsAndBikesTables.cs" />
+    <Compile Remove="Migrations\20200814071610_CascadeToCarsAndBikesTables.Designer.cs" />
+    <Compile Remove="Migrations\20200814072854_kaskadiorikaskadiori.cs" />
+    <Compile Remove="Migrations\20200814072854_kaskadiorikaskadiori.Designer.cs" />
+    <Compile Remove="Migrations\20200819063825_Nullablefields.cs" />
+    <Compile Remove="Migrations\20200819063825_Nullablefields.Designer.cs" />
+    <Compile Remove="Migrations\20200824071934_DetailsModelsRelationshi.cs" />
+    <Compile Remove="Migrations\20200824071934_DetailsModelsRelationshi.Designer.cs" />
+    <Compile Remove="Migrations\20200824073703_s.cs" />
+    <Compile Remove="Migrations\20200824073703_s.Designer.cs" />
+    <Compile Remove="Migrations\20200824074337_s.cs" />
+    <Compile Remove="Migrations\20200824074337_s.Designer.cs" />
+    <Compile Remove="Migrations\20200824074449_OneToOneRelationBetweenDetailsAndVehicle.cs" />
+    <Compile Remove="Migrations\20200824074449_OneToOneRelationBetweenDetailsAndVehicle.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Mediator.Net.Middlewares.UnitOfWork" Version="0.9.23" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
