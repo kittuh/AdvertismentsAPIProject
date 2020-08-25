@@ -11,7 +11,7 @@
 In this project we chose **onion architecture** 
 Ad-Portal project uses Onion layered architecture.
 Base project structure:
-![alt text](https://lh3.googleusercontent.com/CYrbxSDSUSOiPhCnBUc0mZpZXg022u1IKag9MR_cdPr-KOuph_U2FuVfyJPp84riS8LfbQ92H0mu44bDuugD7c1Emn2potLcet_thsN37agYzkSDyWDfL65Uk10e8IwbBB5BCP1A9HGtDT0sBOUhJvnPZ5O6f-YKTT4jXBovEmwaqq5O2e45q7YaH-M4EW1zlJVhH8n6xA5UlswW6PgUx1Ww76QSdAfomogeNeX72F8D5ljiuSflOFRiksQmaj-6f1MNhphZ2HanuHh1csBF9BZ8Ong79fdtDSY974BLesRTSLHlfDOynXIEKnwbhs3Lj9q5_St-j0Gs9akhXtwaWca65EzcGRBtaxyhHNDZyMaoKKDWa2c-E2fVbsDLZ0D1JLXvuCb3rziYnhp1bJc6jHzdZXSgasov5u5TjLBZJAuIA8ENZFb-bFj9JKJHlK_gAzFprZLbJ5ihYDY9c92WVOXm0bEac60NzRhekU7_gruWR4lsFD_qwinS52UPvqLzMAcpp4lg1i0x_SJC-2bfw1BzxNtOFkvIWwcGGeKeMj7r3CW3SYTYmPiCLOwvyzJoFR3sKhqzc-a_lrtX6oCNvgKj0qIRlJgJ6KYTgaNvhFSYC8RbkDmd1MI4clLwflXCt-DHJxxhg2s3NnlDf2OSZA4ymY33sMWT0GKC6oF-fMAcscVN_olfdl8cHxo6uw=w462-h454-no?authuser=0)
+![alt text](https://lh3.googleusercontent.com/DVPtItyZHAx_wZCRjPHtYK16Ptf85yCnlJ4yu4NRy6ppttve1qiw9xMsOBNhe6OicTqpB0WtOEM5OzQvdDDCcJxXFIF9ib1x5ZSn8I2g-MIRMbtBhkLv5cJIwDRexnbEny1T2vaNJlxUe7L7iye7-v0OkuBEOKq3jm5caSUbKz0QGNTAcNWdFlqIFXZ0Yp1NzmeArmvc7uH893wXa0_KyOIbzfZ4u0tiTU7EwBRiYuczPZGcltDnQCPlBd46AhNvN6JfDKHc4w-5iaeWnQRJwPzoyW2iPZU6hhogNIiNNFQHmGxIa5BD27W8e15E9VhLSidwsUoT-IdkRYDptZc1a6Suuq4WTiorzhVWX3Lxnq_ueIjcxknUfShWckeUzOql_mymXwcSvE-hx6pYt-eqFIv5DIxzSTmPIoPfpbGJIhxxiBvBkuzZR03la7GPaxdCWDsw-YFAeWPbjqMycakap0u1vpvxOx0ivpNGrIhoWHBXQQ59kC0UDAmBbxSlalRkRzxzmx1YRjd_makiJpqjxkbqalKUCdKv2W2WSrISiOY4_vH6pcxVB_owjQtYyBl3LX-DQOSVycx_Vr3Yqb65U-MGGOJ3l5x75AXoU6zNvrLz33pGb4WF6mqDJYOul4UCMPArWE6l-cKV4PP3B98dHXlHd898glmxgddZUcNwrgLjdli5welpt8dgAdS1CQ=w462-h454-no?authuser=0)
 
  The primary proposition of this architecture is good coupling.
   What is coupling ? It is the level of dependency of one thing upon another. The higher the coupling, the lower the ability to change and evolve the system.
@@ -24,8 +24,12 @@ Base project structure:
 This layer contains all configuration, startup, controller files. In controllers uses CQRS. CQRS is an architectural pattern. 
 CQRS is an architectural pattern, where the acronym stands for Command Query Responsibility Segregation. We can talk about CQRS when the data read operations are separated from the data write operations, and they happen on a different interface.
 
-
-![alt text](https://lh3.googleusercontent.com/JhLpjJAH2SDFpSfM7A3Tr3qwDkjmSGyyoSnMPGXSeXh0KPB69_kCxw3NJ0wRx0D_BESHwZ3Eq8jEXT0J1njifjr34vXSfJgWTU0cvSmEsbs2RgMRRXQWbHl2OYzh1kwYd6r052vr1uN57O5Ix3h42VA_pokm_FGCcPvap-hePqIz4Uv8h5lW5LH5NmGCsGnkd8NdscAvgUqKK8ql3VZuhz_Ksx62ppmaYF7Z8vPG4gZIB0zkX2F5BH_UdKgqN35tO86ucfydu0EpVpegJxGi2r1bGOU4vndu5GoO9WIT9IIvmp-V3d3kJNLLQLajVSY_8zGH_3U9-ydQjOiiLk9uI7TXFS0F138PTWYdVEbnFR2Ej-0ZYkwHudODdqKDqxZvW_ixNKn34NoM9hTr6AXMobRsdQ2FhDoGsJbfgUSL4T1kBVzs6yzaJ60qJD985UnZBaQwNDagJD0-ntqtTdEui1vQnafSY2H4LFNxRZxBwoeSF-i-6pBjt5qgEh1cjHmU8sO7qTZfrcTV60Hi64IDgmh6aJRdQ15oK-YKSBa_hTKw8nLmWY6ne-WP2637N7Kh14_USM_pO89Q1XgaxbRFzqkJ5C_pVL83wdJTtOFvN2NwgX8tvNiGnu9OdeZdBlPfCCPKjQ455vi4ggDC0cb28KJm_Rc6Ra7J3UvgZRoK06eH2QKweqMDdDde8JUDQQ=w584-h100-no?authuser=0)
+```csharp
+        public async Task<ActionResult<List<VehicleDto>>> ListAsync()
+        {
+            return await uow.Mediator.Send(new List.Query());
+        }
+```
 
 As you can see request body information is mapped to the List.Query class and it is passed to the appropriate handler by using Send command.
 
